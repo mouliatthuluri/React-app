@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<body>
+</body>
+<script type="text/javascript">
+ var i,j,k;
+
+ //This is This is Squre Star Pattern
+ document.writeln('1.This is Squre Star Pattern')
+ document.write('<br />');
+ for(i=1; i <=5; i++)
+ {
+  for(j=1; j<=5; j++)
+  {
+   document.write('*');
+  }
+   document.write('<br />');
+ }
+
+ 
+//This is Right Triangle star Pattern
+ document.write('<br />'+'<br />');
+ document.writeln('2.This is Right Triangle Star Pattern')
+ document.write('<br />');
+
+ for(i=1; i <=5; i++)
+ {
+  for(j=1; j<=i; j++)
+  {
+   
+   document.write('*');
+  }
+   document.write('<br>');
+ }
+
+ //3.This is Mirrored Right Angle Triangle star Pattern
+ document.write('<br />'+'<br />');
+ document.writeln('3.This is Mirrored Right Angle Triangle star Pattern')
+ document.write('<br />');
+
+ for(i=0; i<5; i++)
+ {
+  for(j=4-i; j>0; j--)
+  {
+   document.write('-');
+  }
+  for(j=0; j<i+1; j++)
+  {
+   document.write('*');
+  }
+
+   document.write('<br>');
+ }
+
+ //4.This is Rhombus Star Pattern
+ document.write('<br />'+'<br />');
+ document.writeln('4.This is Rhombus Star Pattern')
+ document.write('<br />');
+
+ for(i=0; i<5; i++)
+ {
+  for(j=4-i; j>0; j--)
+  {
+   document.write('-');
+  }
+  for(j=0; j<5; j++)
+  {
+   document.write('*');
+  }
+
+   document.write('<br>');
+ }
+
+
+  //5.This is Pyramid Star Pattern
+  document.write('<br />'+'<br />');
+ document.writeln('5.This is Pyramid Star Pattern')
+ document.write('<br />');
+ var c= 5;
+ var d= 5;
+ for(i=1; i<=c; i++)
+ {
+  for(j=1; j<=d-1; j++)
+  {
+   document.write('-');
+  }
+  for(k=1; k<=2*i-1; k++)
+  {
+   document.write('*');
+  }
+  d=d-1
+   document.write('<br>');
+ }   
+
+
+ //6.This is Dimond Star Pattern
+ document.write('<br />'+'<br />');
+ document.writeln('6.This is Dimond Star Pattern')
+ document.write('<br />');
+ var spaces= 8;
+ var stars= 1;  
+ for(i=1; i<=9; i++)
+ {
+  for(j=1; j<=spaces; j++)
+  {
+   document.write('-');
+  }
+  for(k=1; k<=stars; k++)
+  {
+   document.write('*');
+  }
+  if(spaces>i)
+  {
+      spaces=spaces-1;
+      stars= stars+2;
+  }
+  if(spaces<i)
+  {
+      spaces=spaces+1;
+      stars= stars-2;
+  }
+   document.write('<br>');
+ }   
+
+
+  //7.This is X- Star Pattern
+  document.write('<br />'+'<br />');
+ document.writeln('7.This is X- Star Pattern')
+ document.write('<br />');
+ var n=5
+ var m= 2*n-1;
+ for(i=1; i<=m; i++)
+ {
+  for(j=1; j<=m; j++)
+  {
+    if(i==j||j==(m-i+1))
+    {
+     document.write('*');
+    }
+    else
+    {
+     document.write('_')  
+    }
+  }
+  document.write('<br>');
+ }   
+
+</script>
+</head>
+
+</html>
